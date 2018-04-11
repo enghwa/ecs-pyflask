@@ -1,4 +1,4 @@
-#Lab 
+# Lab 0
 
 
 ## run python flask locally
@@ -41,3 +41,16 @@ aws  ecr create-repository --repository-name pyflask
  docker push  ???????????.dkr.ecr.ap-southeast-1.amazonaws.com/pyflask:v1
 
 ```
+
+
+# Lab 1
+
+https://aws.amazon.com/getting-started/container-microservices-tutorial/
+
+- Module One - Containerize the Monolith  https://aws.amazon.com/getting-started/container-microservices-tutorial/module-one/
+- Module Two - Deploy the Monolith https://aws.amazon.com/getting-started/container-microservices-tutorial/module-two/
+- Module Three - Break the Monolith https://aws.amazon.com/getting-started/container-microservices-tutorial/module-three/
+- Module Four - Deploy Microservices https://aws.amazon.com/getting-started/container-microservices-tutorial/module-four/
+- Module Five - Clean Up https://aws.amazon.com/getting-started/container-microservices-tutorial/module-five/
+
+ 
