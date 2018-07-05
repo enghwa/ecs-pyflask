@@ -14,8 +14,8 @@ python app.py
 curl http://localhost:8080/
 ```
 
-##  docker build and run locally
-
+##  docker build and run docker locally
+This will containerize the python app into docker container, and run it locally.
 
 ```
 docker build -t pyflask .
@@ -41,6 +41,7 @@ aws  ecr create-repository --repository-name pyflask
  docker push  ???????????.dkr.ecr.ap-southeast-1.amazonaws.com/pyflask:v1
 
 ```
+??????????? = is your unique 12-digit AWS account number.
 
 
 # Lab 1
