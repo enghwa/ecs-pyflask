@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pyflask
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pyflask
+  template:
+    metadata:
+      labels:
+        app: pyflask
+    spec:
+      containers:
+      - name: pyflask
+        image: ??????????????.dkr.ecr.ap-southeast-1.amazonaws.com/pyflask:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5000
+          name: "http"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pyflask
+spec:
+  selector:
+    app: pyflask
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 5000
+  type: LoadBalancer
+  # type: NodePort
