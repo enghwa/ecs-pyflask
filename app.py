@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello Flask : This is from Singapore 2019 - v1.0'
+    return 'Hello Flask : This is from City Center, Singapore 2019 - v1.0'
 
 @app.route("/hostname")
 def return_hostname():
