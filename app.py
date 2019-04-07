@@ -8,11 +8,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello Flask : This is from City Center, Singapore 2019 - v2.0'
+    return 'Hello Flask : This is from ingapore 2019 - v1.0'
 
 @app.route("/hostname")
 def return_hostname():
-    return "This is an example wsgi app served from {} to {}".format(socket.gethostname(), request.remote_addr)
+    return "This is a Flask wsgi app served from {} to {}".format(socket.gethostname(), request.remote_addr)
 
 
 @app.route('/fib/<int:number>')
